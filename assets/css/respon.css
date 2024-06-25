@@ -1,0 +1,111 @@
+@media only screen and (max-width: 600px) {
+
+  :root {
+    --bg-color: #fff;
+    --nav-color: #009788;
+    --hover-color: #ff0028;
+    --border-color: green;
+  
+    --box-shadow-color: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(88, 6, 6, 0.16) 0px 1px 4px, rgb(56, 117, 44) 0px 0px 0px 3px;
+  }
+
+  .logoBar {
+    padding: 8px 0px 0px;
+  }
+  .logo {
+    max-width: 100%;
+  }
+  ul li a {
+    font-size: 20px;
+  }
+
+   /* ====== responsive ===== */
+   input[type="checkbox"]:checked ~ .menu,
+   input[type="checkbox"]:checked ~ .close-menu {
+     display: block;
+   }
+   input[type="checkbox"]:checked ~ .open-menu {
+     display: none;
+   }
+   .open-menu {
+     display: block;
+   }
+ 
+   /*======= responsive end ======= */
+   .header {
+     background-color: var(--bg-color);
+   }
+   .header .main-menu .menu {
+     display: none;
+     position: absolute;
+     background-color: var(--bg-color);
+     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+     width: 100%;
+     overflow: auto;
+     padding: 20px 0px 40px;
+     right: 0%;
+     top: 100%;
+     flex-direction: column;
+   }
+   .header nav .main-menu ul {
+     flex-direction: column;
+     position: relative;
+     animation-name: anim;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
+   }
+   @keyframes anim {
+     0% {
+       left: -100%;
+     }
+     100% {
+       left: 0%;
+     }
+   }
+ 
+
+
+  .fa-google-play {
+    font-size: 25px;
+  }
+  .flex2 {
+    flex-direction: column;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .hero-area {
+    margin-top: 170px;
+  }
+  /* ===== ads ======= */
+  .res-ads{
+    display: block;
+    text-align: center;
+  }
+  .dex-ads{
+    display: none;
+  }
+  /* ===== ads ======= */
+
+  .jobDetails h4 {
+    font-size: 20px;
+  }
+
+  .jobDetails .iframePdfView {
+    display: none;
+  }
+  .jobDetails .ytVideo{
+    width: 100%;
+    height: 210px;
+  }
+  .jobDetails .resultImg {
+    display: block;
+    margin-top: 25px;
+  }
+
+  /* .ads{
+    max-width: 400px;
+  } */
+}

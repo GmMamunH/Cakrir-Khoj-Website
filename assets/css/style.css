@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --bg-color: #fff;
+  --nav-color: #009788;
+  --hover-color: #ff0028;
+  --border-color: green;
+
+  --box-shadow-color: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(88, 6, 6, 0.16) 0px 1px 4px, rgb(56, 117, 44) 0px 0px 0px 3px;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 10px 10px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--bg-color);
+  z-index: 999;
+}
+.logoBar {
+  padding: 5px 0px 0px;
+}
+.logo {
+  max-width: 100%;
+}
+ul {
+  padding: 0px 5px;
+}
+ul li a {
+  color: var(--nav-color);
+  font-size: 25px;
+}
+ul li a:hover {
+  color: var(--hover-color);
+  transition: 0.9s;
+}
+
+.header nav input[type="checkbox"],
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+.header nav .main-menu label {
+  width: 50px;
+  height: 50px;
+  color: var(--nav-color);
+  /* background-color: var(--hover-color); */
+  font-size: 35px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+marquee {
+  border-top: 2px outset var(--border-color);
+  padding: 5px 0px 0px;
+}
+.hero-area {
+  margin-top: 200px;
+}
+/* =========== ads ================ */
+.ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  /* display: none; */
+}
+.res-ads {
+  display: none;
+}
+/* =============== ads =============== */
+#jobPre {
+  margin: 30px 0px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+fieldset {
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  border-color: aqua;
+  background-color: #fffaeb;
+}
+/* legend{
+  padding: 0px 10px;
+} */
+.single-box {
+  padding: 20px;
+  box-shadow: var(--box-shadow-color);
+  border-radius: 10%;
+}
+.single-box:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+  transition: 0.9s;
+}
+/* .single-box:hover h2 {
+  transform: scale(1.1);
+  overflow: hidden;
+  transition: .5s;
+} */
+
+.single-box > img {
+  max-width: 100px;
+  border-radius: 10%;
+}
+.single-box > h2 {
+  color: var(--nav-color);
+  font-size: 15px;
+}
+
+/* ========================================== */
+.footer-copyright-text {
+  color: #ff0028;
+  font-weight: 600; /* change */
+  font-size: 16px;
+  border-top: 2px outset green;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.footer-copyright-text p span i {
+  color: var(--nav-color);
+  font-size: 25px;
+  padding: 10px;
+}
+.footer-copyright-text p span i:hover {
+  color: var(--hover-color);
+}
+/* ================================================== */
+.jobDetails .ytVideo {
+  width: 100%;
+  height: 550px;
+  box-shadow: var(--box-shadow-color);
+  margin: 30px 0px;
+  text-align: center;
+}
+.jobDetails .iframePdfView {
+  width: 100%;
+  height: 1000px;
+  /* padding: 20px 0px;
+  background-color: #fffaeb; */
+  box-shadow: var(--box-shadow-color);
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.jobTitle li {
+  font-size: 25px;
+  color: green;
+  cursor: pointer;
+  overflow: hidden;
+  max-height: 3.6em;
+}
+.jobTitle li p {
+  font-size: 15px;
+  color: red;
+}
+.jobTitle li:hover {
+  color: goldenrod;
+}
+
+.jobDetails h4 {
+  font-size: 25px;
+  color: green;
+  text-align: justify;
+  padding: 10px;
+}
+.jobDetails p {
+  font-size: 15px;
+  color: var(--nav-color);
+  text-align: justify;
+  font-weight: bold;
+}
+.jobDetails p span {
+  color: black;
+  font-weight: normal;
+}
+.jobDetails button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--nav-color);
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+}
+.jobDetails button:hover {
+  background-color: var(--hover-color);
+  transition: 0.5s;
+}
+.jobDetails button a {
+  color: var(--bg-color);
+  font-size: 20px;
+}
+
+.jobDetails .resultImg{
+  display: none;
+}
